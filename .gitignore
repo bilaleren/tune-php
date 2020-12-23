@@ -1,0 +1,6 @@
+.idea
+vendor
+*.stub
+*.lock
+index.php
+*.test.php
