@@ -4,7 +4,7 @@ namespace Tune\Utils;
 
 use Tune\Repository\NetworkRepository;
 
-class BlankNetwork implements NetworkRepository
+class Network implements NetworkRepository
 {
 
     /**

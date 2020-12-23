@@ -8,7 +8,7 @@ use Tune\AffiliateApi;
 use Tune\AdvertiserApi;
 use Tune\Utils\Operator;
 use ReflectionException;
-use Tune\Utils\BlankNetwork;
+use Tune\Utils\Network;
 use Tune\Utils\HttpQueryBuilder;
 
 class TuneApiTest extends TestCase
@@ -47,8 +47,8 @@ class TuneApiTest extends TestCase
     public function testTuneNetworks(): void
     {
         $networks = new Networks([
-            new BlankNetwork('api_key', 'network_1'),
-            new BlankNetwork('api_key', 'network_2')
+            new Network('api_key', 'network_1'),
+            new Network('api_key', 'network_2')
         ]);
         $affiliate = new AffiliateApi($networks);
 

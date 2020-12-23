@@ -13,12 +13,12 @@ composer require bilaleren/tune-api
 ```php
 use Tune\Networks;
 use Tune\AffiliateApi;
-use Tune\Utils\BlankNetwork;
+use Tune\Utils\Network;
 use Tune\Repository\NetworkRepository;
 
 $networks = new Networks([
-    new BlankNetwork('api_key_1', 'network_id_1'), // Auto selected network
-    new BlankNetwork('api_key_2', 'network_id_2')
+    new Network('api_key_1', 'network_id_1'), // Auto selected network
+    new Network('api_key_2', 'network_id_2')
 ]);
 
 class CustomNetwork implements NetworkRepository 
