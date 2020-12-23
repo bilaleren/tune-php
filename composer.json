@@ -5,7 +5,8 @@
     "authors": [
         {
             "name": "Bilal Eren",
-            "email": "bilal@webnoi.com"
+            "email": "bilal@webnoi.com",
+            "role": "Developer"
         }
     ],
     "keywords": [
