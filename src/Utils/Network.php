@@ -40,7 +40,7 @@ class Network implements NetworkRepository
      */
     public function name(): string
     {
-        return $this->networkId;
+        return $this->name ?? $this->networkId;
     }
 
     /**
@@ -56,7 +56,7 @@ class Network implements NetworkRepository
      */
     public function networkId(): string
     {
-        return $this->name ?? $this->networkId;
+        return $this->networkId;
     }
 
     /**
