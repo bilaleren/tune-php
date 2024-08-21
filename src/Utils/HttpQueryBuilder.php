@@ -158,10 +158,10 @@ class HttpQueryBuilder
     }
 
     /**
-     * @param ...$relations
+     * @param array $relations
      * @return $this
      */
-    public function addRelations(...$relations): self
+    public function addRelations(array $relations): self
     {
         foreach ($relations as $relation) {
             $this->addRelation($relation);
