@@ -147,6 +147,30 @@ class HttpQueryBuilder
     }
 
     /**
+     * @param string $value
+     * @return $this
+     */
+    public function addRelation(string $value): self
+    {
+        $this->query['contain'][] = $value;
+
+        return $this;
+    }
+
+    /**
+     * @param array $relations
+     * @return $this
+     */
+    public function addRelations(array $relations): self
+    {
+        foreach ($relations as $relation) {
+            $this->addRelation($relation);
+        }
+
+        return $this;
+    }
+
+    /**
      * @param string $field
      * @param string $direction
      * @return $this
